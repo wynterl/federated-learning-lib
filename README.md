@@ -13,7 +13,9 @@ A set of parties own data and each trains a local model. The parties exchange up
 
 The key design points of IBM federated learning are the ease of use for the machine learning professional, configurability to different computational environments - from data centers to edge devices - and extensibility. It can be extended to work with different machine learning (ML) libraries, learning protocols, and fusion algorithms. This provides a basic fabric on which FL projects can be run and research in FL learning can take place.
 
-IBM federated learning comes with a large library of fusion algorithms for both DNNs and classic ML approaches, consisting of implementations of both common, published fusion algorithms as well as novel ones we have developed.
+IBM federated learning comes with a large library of algorithms for both DNNs and classic ML approaches, consisting of implementations of both common, published fusion algorithms as well as novel ones we have developed.
+
+In order to facilitate the design, development and monitoring of Federated Learning experiments using the IBMFL library, we provide the IBM FL Experiment Manager: a Jupyter Notebook based UI interface, [Experiment Manager Dashboard](runner/exp_manager/Experiment_Manager_dashboard.ipynb) where users can choose the model, fusion algorithm, number of parties and other (hyper) parameters. The experiments can be performed on the machine where the notebook is hosted, i.e., locally, or across remote machines. In the first version, several pre-defined models and datasets are supported. In the next version, it will be possible for users to use their own custom-defined models and datasets. The Experiment Manager dashboard uses a [runner](runner/) module, and there's a [usage guide](runner/exp_manager/usage_guide.md) on how to go about using the dashboard.
 
 ## Supported functionality
 IBM federated learning supports the following machine learning model types: 
@@ -23,8 +25,8 @@ IBM federated learning supports the following machine learning model types:
 - Linear classifiers/regressions (with regularizer): logistic regression, linear SVM, ridge regression, Kmeans and Naïve Bayes 
 - Deep Reinforcement Learning algorithms including DQN, DDPG, PPO and more
 
-IBM federated learning supports multiple state-of-the-art fusion algorithms to combine model updates coming from multiple parties. Changes in this algorithm may speed up the convergence, reduce training time or improve model robustness. 
-For a particular ML model, you can select multiple types of fusion algorithms: 
+Fusion algorithms combine model updates coming from multiple parties. IBM federated learning supports many state-of-the-art fusion algorithms.  The IBM Federated Learning Experiment Manager makes it easy to plug-and-play and try different fusion algorithms to determine which works best for the given model and dataset. 
+
 
 |	*Supported ML Models*	                                    |	*Supported fusion algorithms*	|
 |-----------------------------------------------------------|-------------------------------|
@@ -45,7 +47,7 @@ For a particular ML model, you can select multiple types of fusion algorithms:
 |K-means | SPAHM [Yurochkin et al.](https://arxiv.org/abs/1911.00218) |
 |Naïve Bayes | Naive Bayes fusion with differential privacy|
 
-We also support the following fairness techniques that help to mitigate bias in federated learning and can be coupled for multiple types of ML models: 
+IBM FL also supports the following fairness techniques that can help mitigate bias in federated learning. These techniques can be coupled for many types of ML models: 
 
 | *Fairness techniques*   | *Algorithm types* | *Supported ML models* | 
 |-------------------------|-------------------|-------------------------|
@@ -53,8 +55,6 @@ We also support the following fairness techniques that help to mitigate bias in 
 | Global Reweighing with Differetial Privacy [Abay et al.](https://arxiv.org/abs/2012.02447)| Pre-processing | All ML models |
 | Federated Prejudice Removal [Abay et al.](https://arxiv.org/abs/2012.02447) | In-processing | Logistic Regression |
 
-In order to aid orchestration of Federated Learning experiments using the IBMFL library, we also provide a Jupyter Notebook based UI interface, [Experiment Manager Dashboard](runner/exp_manager/Experiment_Manager_dashboard.ipynb) where users can choose the model, fusion algorithm, number of parties and other (hyper) parameters for a run. This orchestration can be done on the machine where the notebook is hosted, i.e., locally or even across remote machines. As of now, only limited models and datasets are supported, but more will be added in the near future.
-The dashboard uses a [runner](runner/) module, and there's a [usage guide](runner/exp_manager/usage_guide.md) on how to go about using the dashboard.
 
 ## How to get started?
 
