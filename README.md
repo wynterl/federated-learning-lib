@@ -25,7 +25,7 @@ IBM federated learning supports the following machine learning model types:
 - Linear classifiers/regressions (with regularizer): logistic regression, linear SVM, ridge regression, Kmeans and Naïve Bayes 
 - Deep Reinforcement Learning algorithms including DQN, DDPG, PPO and more
 
-Fusion algorithms combine model updates coming from multiple parties. IBM federated learning supports many state-of-the-art fusion algorithms.  The IBM Federated Learning Experiment Manager makes it easy to plug-and-play and try different fusion algorithms to determine which works best for the given model and dataset. 
+Fusion algorithms combine model updates coming from multiple parties. IBM Federated Learning supports many state-of-the-art fusion algorithms.  The IBM Federated Learning Experiment Manager makes it easy to plug-and-play and try different fusion algorithms to determine which works best for the given model and dataset. 
 
 
 |	*Supported ML Models*	                                    |	*Supported fusion algorithms*	|
@@ -78,7 +78,7 @@ There is a [docs folder](./docs) with tutorials and API documentation to learn h
 
 We appreciate feedback and questions. Please post issues when you encounter them. 
 
-We have set up a Slack channel for ongoing discussion. Join the IBM federated learning workspace: https://ibm-fl.slack.com/
+We have set up a Slack channel for ongoing discussion. Join the IBM Federated Learning workspace at: https://ibm-fl.slack.com/
 
 
 ## Citing IBM Federated Learning
@@ -94,7 +94,7 @@ If you use IBM Federated Learning, please cite the following reference paper:
 
 ## Ongoing effort 
 
-This is an ongoing effort. We plan to update this repo as new functionality is added frequently.
+This is an ongoing effort. We plan to update this repo frequently as new functionality is added.
 
 ## License
 
