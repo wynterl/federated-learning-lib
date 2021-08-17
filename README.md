@@ -60,9 +60,12 @@ IBM FL also supports the following fairness techniques that can help mitigate bi
 
 Clone the repository. The main framework runtime is packaged in a [whl file](federated-learning-lib/). 
 
-Try the [set-up guide](setup.md) for a single-node federated learning setup. 
+If you would like to use the IBM Federated Learning Experiment Manager, then please visit
+- Experiment Manager
 
-There are a number of [examples](examples/README.md) with explanation for different federated learning tasks with different model types to get started with.
+Alternatively, try the [set-up guide](setup.md) for a manual single-node federated learning setup. 
+
+There are a number of [examples](examples/README.md) with explanation of different federated learning tasks with different model types to get started with, and several Jupyter Notebooks  XXXXXX  to get you started on training a few simple models federatively.
 
 ## How does it work?
 
@@ -72,7 +75,7 @@ There is a [docs folder](./docs) with tutorials and API documentation to learn h
 - Aggregator and Party [configuration tutorial](docs/tutorials/configure_fl.md)
 - [API documentation](http://ibmfl-api-docs.mybluemix.net/index.html)
 
-If you would like to use the IBM Federated Learning Experiment Manager, then please visit
+If you would like to use the IBM Federated Learning Experiment Manager, then please visit the tutorial on the Experiment Manager at
 - Experiment Manager
 
 Relevant publications can be found at the links below.
