@@ -66,11 +66,17 @@ There are a number of [examples](examples/README.md) with explanation for differ
 
 ## How does it work?
 
-There is a [docs folder](./docs) with tutorials and API documentation to learn how to use and extend IBM federated learning.
+There is a [docs folder](./docs) with tutorials and API documentation to learn how to ma nually set up and extend IBM Federated Learning.
 
 - [Web Site](https://ibmfl.mybluemix.net/)
 - Aggregator and Party [configuration tutorial](docs/tutorials/configure_fl.md)
 - [API documentation](http://ibmfl-api-docs.mybluemix.net/index.html)
+
+If you would like to use the IBM Federated Learning Experiment Manager, then please visit
+- Experiment Manager
+
+Relevant publications can be found at the links below.
+
 - [Related publications](docs/papers.md)
 - [White paper](https://arxiv.org/abs/2007.10987)
 
